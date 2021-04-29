@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./scss/main.css">
+  <!-- fonts  -->
+  <link href="//db.onlinewebfonts.com/c/5e25ac6068cc0bdc5e2e96c345e6760a?family=GOST+UI+2" rel="stylesheet"
+    type="text/css" />
+  <title>test-task</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__logo-container flex-row">
+      <div class="header-logo logo-img"></div>
+      <div class="header__title">Услуги и сервисы Пермского края</div>
+    </div>
+    <div class="header__enter-menu flex-row header-menu__wrapper">
+      <div class="header-menu__items flex-row">
+        <div class="header-menu__icon enter-icon"></div>
+        <div class="header-menu__user">Константинопольский К.К</div>
+      </div>
+      <div class="header-menu__login login-link"><a class="header-menu__login-link link" href="#">Выйти</a></div>
+    </div>
+  </header>
+  <section class="offers offers-wrapper">
+
+    <div class="offers__info">
+      <h2 class="offers-info__title">Выдача градостроительного<br> плана земельного участка</h2>
+      <div class="offers-info__description description">Градостроительный план земельного участка выдается в целях
+        обеспечения
+        субъектов<br> градостроительной деятельности информацией, необходимой для<br> архитектурно-строительного
+        проектирования, строительства, реконструкции объектов<br> капитального строительства в границах земельного
+        участка.</div>
+    </div>
+    <div class="offers-info__container flex-column">
+      <div class="offers-info__logo"></div>
+      <div class="offers-info__description description">Услугу предоставляет<br>Орган местного самоуправления</div>
+    </div>
+  </section>
+  <div class="decor-line"></div>
+  <section class="user section__wrapper">
+    <div class="user__container flex-row__container">
+      <div id="one" class="user__section-number section__number"></div>
+      <h4 class="user__title title">Выбор заявителя</h4>
+    </div>
+    <label for="user" id="user"><input class="input _reg" type="radio" name="user" id="user" value="">Константинопольский
+      К.К.<br>
+      <span>Физическое лицо</span><br></label>
+    <label for="user">
+      <input class="input _reg" type="radio" name="user" id="user">ООО «Константинополь»<br>
+      <span>Юридическое лицо</span>
+    </label>
+    <button class="main-user__submit main-button" type="button">Продолжить</button>
+  </section>
+  <section class="user-document section__wrapper">
+    <div class="user-document__container flex-row__container">
+      <div id="two" class="user-document__section-number section__number"></div>
+      <h4 class="main-document__title title">Данные заявителя</h4>
+    </div>
+
+
+    <label for="surname">Фамилия</label>
+    <input class="user-document__input text-input__style _reg" id="surname" type="text" placeholder="Константинопольский"
+      required>
+    <label for="name">Имя</label>
+    <input class="user-document__input text-input__style _reg" id="name" type="text" placeholder="Константин" required>
+    <label for="secondname">Отчество</label>
+    <input class="user-document__input text-input__style _reg" id="secondname" type="text" placeholder="Константинович"
+      required>
+
+    <label for="email">Электронная почта</label>
+    <input class="user-document__input text-input__style _reg" id="email" type="email"
+      placeholder="konstantinopolskiy@mail.ru" required>
+
+    <label for="tel">Телефон</label>
+    <input class="user-document__input text-input__style _reg" id="tel" type="tel" placeholder="+7 (901) 123-45-67" required>
+
+    <h5 class="user-document__subtitle">Документ, удостоверяющий личность</h5>
+
+    <label for="document">Документ</label>
+    <input class="user-document__input text-input__style _reg" id="document" type="text" placeholder="Паспорт" required>
+    <div class="user-document__input-wrapper">
+      <label for="series">Серия
+      <input class="user-document__input text-input__style input-series _reg" id="series" type="number" placeholder="Серия" required></label>
+      <label for="number">Номер
+      <input class="user-document__input text-input__style input-number _reg" id="number" type="number" placeholder="Номер" required></label>
+    </div>
+    <div class="user-document__title">Когда выдан</div>
+    <label for="day">День</label>
+    <input class="user-document__input text-input__style _reg" id="day" type="number" placeholder="19" required>
+    <label for="month">Месяц</label>
+    <input class="user-document__input text-input__style _reg" id="month" type="number" placeholder="10" required>
+    <label for="year">Год</label>
+    <input class="user-document__input text-input__style _reg" id="year" type="number" placeholder="1990" required>
+
+    <button class="user-document__button main-button" type="button">Продолжить</button>
+  </section>
+  <section class="agree section__wrapper">
+    <div class="agree__container flex-row__container">
+      <div id="three" class="agree__section-number section__number"></div>
+      <h4 class="agree__title title">Согласие</h4>
+    </div>
+    <ul class="agree-list"><span>Требуется ваше согласие по следующим пунктам:</span>
+      <li class="agree__list-item">Я подтверждаю, что вся представленная<br> информация является
+        достоверной и точной;</li>
+      <li class="agree__list-item">Я несу ответственность в соответствии<br> с действующим
+        законодательством Российской<br> Федерации за предоставление заведомо ложных<br> или неполных сведений;</li>
+      <li class="agree__list-item">Я выражаю свое согласие на необходимое<br> использование
+        и обработку
+        своих персональных<br> данных, в том числе в информационных системах;</li>
+      <li class="agree__list-item">Со сроками оказания государственной услуги<br> ознакомлен.</li>
+    </ul>
+    <label><input class="agree__input _reg" type="checkbox" name="agree1" value="">Я подтверждаю свое согласие со
+      всеми<br><span>вышеперечисленными
+        пунктами <br></span></label>
+    <label><input class="agree__input _reg" type="checkbox" name="agree2" value="">Я уведомлен о том, что результат
+      будет<br> <span>получен в электронном
+        виде<br></span></label>
+    <div class="agree__img"></div>
+    <div class="agree__description">Пожалуйста, еще раз внимательно<br> проверьте все данные перед
+      отправкой
+    </div>
+    <button class="agree__button main-button" type="submit">Отправить</button>
+    <div class="agree__lisence-title">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">правилами хранения
+        и обработки персональных данных</a></div>
+  </section>
+  <section class="result section__wrapper hidden">
+    <div class="result__container flex-row__container">
+      <div id="four" class="result__section-number section__number"></div>
+      <h4 class="result__title title">Заявление принято</h4>
+    </div>
+    <div class="result__description">Номер заявления <span>RU-1234567.</span> Максимальный срок<br> предоставления
+      услуги — 20 рабочих дней. Следите за статусом<br> заявления в<a class="link-pravite" href="#">Личном кабинете</a>.</div>
+    <div class="result__description">Если у вас остались вопросы по оказанию услуги, пожалуйста,<br> обращайтесь по
+      телефону +7 (342) 123-45-67.</div>
+    <div class="result-button__wrapper">
+      <button class="result__button  last-button">Вернуться в каталог</button>
+      <button class="result__button  last-button">Перейти в личный кабинет</button>
+    </div>
+  </section>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
