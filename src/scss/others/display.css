@@ -1,0 +1,124 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active {
+  width: 736px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.active label,
+.active ul {
+  margin-top: 0;
+}
+
+.active {
+  color: #3b4256;
+}
+
+.active .section__number {
+  background-color: #0061d9;
+  color: #ffffff;
+}
+
+.active .result__section-number {
+  background-image: url(../../images/el3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.checked {
+  width: 736px;
+  height: 80px;
+  overflow: hidden;
+  color: #000000;
+}
+
+.checked .section__number {
+  background-image: url(./../../images/makeUp.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.checked #one::before,
+.checked #two::before,
+.checked #three::before,
+.checked #four::before {
+  content: none;
+}
+
+input:invalid {
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
+}
+
+input:valid {
+  -webkit-box-shadow: 0 0 15px green;
+          box-shadow: 0 0 15px green;
+}
+
+input:valid :checked {
+  border: 2px solid blue;
+}
+
+label input:checked {
+  border: 2px solid blue;
+}
+/*# sourceMappingURL=display.css.map */

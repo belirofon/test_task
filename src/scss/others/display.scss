@@ -1,0 +1,88 @@
+@import 'mixins';
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  width: 736px;
+  height: auto;
+  @include flex-column($alItems: left);
+
+  label,
+  ul {
+    margin-top: 0;
+  }
+}
+
+.active {
+  color: #3b4256;
+
+  .section__number {
+    background-color: #0061d9;
+    color: #ffffff;
+  }
+
+  .result__section-number {
+    background-image: url(../../images/el3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.checked {
+  width: 736px;
+  height: 80px;
+  overflow: hidden;
+  color: #000000;
+
+  .section__number {
+    background-image: url(./../../images/makeUp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #one::before,
+  #two::before,
+  #three::before,
+  #four::before {
+    content: none;
+  }
+}
+
+input:invalid {
+  box-shadow: 0 0 15px red;
+  
+}
+
+input:valid {
+  box-shadow: 0 0 15px green;
+  :checked {
+    border: 2px solid blue;
+  }
+}
+
+label {
+  input:checked {
+    border: 2px solid blue;
+  }
+}
